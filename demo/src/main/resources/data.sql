@@ -1,0 +1,7 @@
+CREATE TABLE short_urls (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  shortcode VARCHAR(255) NOT NULL,
+  original_url VARCHAR(1000) NOT NULL,
+  created_at TIMESTAMP NOT NULL,
+  expiry TIMESTAMP NOT NULL
+);
